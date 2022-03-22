@@ -1,0 +1,19 @@
+##chat funcional##
+- por ahora tenemos un chat funcional el qual puedes escoger tu nombre.
+- te avisa si algun ususario ha entrado o no, si ha salido, o se ha vuelto a unir.--> el problema es que para el usuario en question sale pero para el otro usuario que esta dentro del chat sale sistema y tengo que mirar como arreglar esto.
+- poner manual para emoticonos, memes y gifs.
+--------------------------------------------------
+intentar agregarlo con alguna funcion  de /manual o algo asi.
+poner fondo para los mensajes para que asi se pueda distinguir mejor
+. hacer opcoion de subir ficheros (facil)
+. hacer opcion de poder subir audios y reproducirlos
+. hacer opcion de cambiar fondo de pantalla mas alla del modo oscuyro, es decir poner una array o algo que escoja entre distintos tipos disponibles,
+ALERTA EMOGIS---------------------------------------
+los emogis lo que pasa es que cambian literalmente las palabras por los emogis asi que si se usa alguna de ellas en alguna frase es 100% seguro de que te la cambie pior un emogi.
+
+ex:linea 65 para añadir una classe diferente y poder jugar con el a modificar donde y como sale el mesnaje de union/irse/conectarse etc.
+- hacer caja de commandos en modod oscuro para modo oscuro.
+posibilidad de añadir nuevos emogis
+hay quie adaptar el donso al tamaño del mensaej
+el problema que pasa es que si pongo el fondo en inlfine-block eso causa que cada mensaje se ponga uno al lado del otro ,FUCK
+vamoooos parche resueltooooo

@@ -1,0 +1,284 @@
+body {
+  /*el fondo de abajo se sie modifica se puede conseguir un fondo de pantalla aleatorio cada vez que ingresemos en la apgina
+  
+  background-image: url('https://picsum.photos/200/300');
+  */
+  background-color: #f9fafb;
+  background-image: url('https://cutewallpaper.org/21/soft-aesthetic-desktop-wallpapers/Wallpaper-For-Desktop-Laptop-Sm07-Pink-Blue-Soft-Pastel-.jpg');
+  bacground-position:center;
+  backdrop-filter:blur(3px);/*para ver la letra del fondo*/
+  background-repeat:no-repeat;
+  background-size:cover;
+  transition: .2s ease-in-out;
+}
+/*codigo de instruccioones para el modal */
+.modal-body .code {
+  background-color: #333333; 
+  color: gray; 
+  padding: 15px;
+  width:100%;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  border-radius: 10px; 
+  font-family: Fira Code, monospace;
+}
+/*BOTONES MODO OSCURO*/
+ .chatify-darknav .btn {
+  color:white;
+  padding: 5px 25px;
+  font-size: auto;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #195818;
+}
+/*BOTONES MODO CLARO*/
+.chatify-lightnav .btn {
+  padding: 5px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: #5dee82;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #4da85f;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.w80p {
+  width: 80%;
+}
+
+.c-flexcontainer {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.awidth {
+  width: 100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/*BOTON PARTE INFERIOR DEL MODAL*/
+.modal-footer .btn {
+  padding: 5px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background-color: #5dee82;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #4da85f;
+}
+/*BOTON PARTE INFERIOR DEL MODAL EN MODO OSCURO*/
+.chatify-dark-body .modal-footer .btn {
+  color:white;
+  padding: 5px 25px;
+  font-size: auto;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #195818;
+}
+.modal-title {
+
+}
+/*--------------------------------------------*/
+/*ZONA SLIDER DE CAMBIO DE MODO*/
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #04AA6D;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #4bec73;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #388c36;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* barra redonda*/
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.centerthis {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+}
+/*MODO OSCURO */
+.chatify-dark-body {
+  background-color: #1b232f;
+  background-image: url('https://fondosmil.com/fondo/510.jpg'); 
+  /*el fondo de abajo se sie modifica se puede conseguir un fondo de pantalla aleatorio cada vez que ingresemos en la apgina
+  
+  background-image: url('https://random.imagecdn.app/500/150');
+  */
+  bacground-position:center;
+  background-repeat:no-repeat;
+  backdrop-filter:blur(0px);
+  background-size:cover;
+  color: black !important; /*pondriamos blanco si el fondo fuera negro pero no*/
+  transition: .2s ease-in-out;
+}
+/*NAVBAR CLARA PARA MODO CLARO*/
+.chatify-lightnav {
+  background-color: #E1E1E1;
+  background-image:url('https://24wallpapers.com/app-gateway/wallpaper-uploads/wallpapers/legacyUploads/wi7600a8b1fdd-c65c-4d40-8bef-c970903d00df504257363.jpg');
+  background-position:center;
+  background-size:cover;
+  backgrop-filter:blur(3px);
+  background-repeat:no-repeat;
+  transition: .2s ease-in-out;
+}
+
+.chatify-navbar-brand-light {
+  color: black !important;
+  transition: .2s ease-in-out;
+}
+
+.chatify-navbar-brand-dark {
+  color: white !important;
+  transition: .2s ease-in-out;
+}
+/*NAVBAR PARA MODO OSCURO*/
+.chatify-darknav {
+  background-color: #2F3B4D !important;
+ /* background-image:url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm218batch7-mynt-55.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=2c1a4a1462a4aca28aa792accef92adb');*/
+  background-image:url('https://p4.wallpaperbetter.com/wallpaper/988/889/137/simple-gradient-minimalism-wallpaper-preview.jpg');
+  background-position:center;
+  background-size:cover;
+  backgrop-filter:blur(3px);
+  background-repeat:no-repeat;
+  transition: .2s ease-in-out;
+}
+/*Zona edicion de fondo del mensaje para estilo CLARO
+ESTA DANDO PROBLEMAS
+ALERTAAAAA CODIGO QUE HACE QUE LOS MENSAJES SE VEAN UNO AL LADOI DEL OTRO
+
+.fmensajes {
+  height:auto;
+  width:600px; funciona a medias pero da problemas
+  background:white;
+  background-size:40%;
+  margin: 5px;
+  padding: 10px 10px;
+  display: block;
+  con el grid tampoco funciona hay que adfdaptar el tamaño
+  display:grid;
+  para que el fondo se adapte al texto
+  template-grid-columns:(100px, 2);
+  border-radius:2pc;
+}*/
+/*Zona edicion de fondo del mensaje para estilo OSCURO*/
+/*INPUT MODO OSCURO*/
+.chatify-darkinput {
+  background-color: #3E4B60 !important;
+  border-color: #3E4D63 !important;
+  color: white !important;
+  transition: .2s ease-in-out;
+}
+/*input modo claro*/
+.chatify-lightinput {
+  background-color: #ffffff !important;
+  transition: .2s ease-in-out;
+}
+
+/*BARRA PARA BAJJAR CONTENIDO*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  transition: .2s ease-in-out;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  transition: .2s ease-in-out;
+}
+.msj {
+  position: relative;
+	clear: both;
+	display: inline-block;
+	padding: 10px 20px 10px 20px;
+	margin: 0 0 20px 0;
+	font: 16px/20px 'Noto Sans', sans-serif;
+	border-radius: 2pc;
+	background-color: #D7DBDD;
+}
+.logaso {
+  
+}
