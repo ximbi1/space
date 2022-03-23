@@ -58,8 +58,8 @@ window.onfocus = function () {
       currentHours = '0' + currentDate.getHours()
     }
     const dateString = currentHours + ':' + currentMinutes
-      
-    const name = document.querySelector("#username")
+      //const name
+    var name = document.querySelector("#username")
     //para que suene el aviso
     playnoises = Boolean(false);
     if (name.value != '') {
@@ -102,7 +102,8 @@ document.querySelector("#savename").addEventListener('click', () => {
   }
   }
   const dateString = currentDate.getHours() + ':' + currentMinutes
-  const name = document.querySelector("#username")
+ //const name
+  var name = document.querySelector("#username")
   const data = `<p><strong style='color: red'>${dateString} | ${name.value}</strong> Se ha unido a Ximbi'space.</p><p class="msj"><strong style='color: green'>${dateString} / ${name.value}:</strong> Hola peñaa! 🤪</p> <br\>`;
   
   connection.send(data);
@@ -123,7 +124,7 @@ button.addEventListener("click", () => {
   }
   const dateString = currentHours + ':' + currentMinutes
    //ZONA IMPORTANTE TODO ESTO DE AQUI ABAJO 
-  const name = document.querySelector("#username")
+  var name = document.querySelector("#username")
   const message = document.querySelector("#message");
   let newmessage = message.value;
 //funcion para intercambiar texto por emojis,( ayuda de internet xd)
@@ -140,7 +141,15 @@ button.addEventListener("click", () => {
   if (newmessage.startsWith("/img ")) {
     link = newmessage.split(' ')[1]
     data = `<p><strong style='color: ${yourcolor}'>${dateString} / ${name.value}:</strong> <br><img src=${link} width=500 style='border-radius: 5px;'></p>`;
-    //MODO ITALICA
+    //MODO PARA CAMBIAR EL NICKNAME
+  } else if (newmessage.startsWith('/nick ')) {
+    newmessage = newmessage.slice(5)
+    //revisar
+    document.getElementById('username').value = newmessage;//VAMOOOS
+    data = `<p><strong style='color: ${yourcolor}'>${dateString} / ${name.value}:</strong> <i>Ahora este usuario se llama ${newmessage}.</i></p>`;
+   
+  
+      //MODO ITALICA
   } else if (newmessage.startsWith('/me ')) {
     newmessage = newmessage.slice(3)
     data = `<p><strong style='color: ${yourcolor}'>${dateString} / ${name.value}:</strong> <i>${newmessage}</i></p>`;
