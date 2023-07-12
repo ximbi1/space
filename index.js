@@ -78,7 +78,7 @@ connection.onclose = (event) => {
 connection.onerror = (event) => {
   console.error("Error observado en Ximbi'space:", event);
 };
-
+//funcion para mandar mensajes
 connection.onmessage = (event) => {
   // muestra el mensaje mandado en el chat.
   const chat = document.querySelector("#chat");
