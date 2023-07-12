@@ -15,7 +15,7 @@ connection.onopen = (event) => {
   var min = 0;
   yourcolor = colors[Math.floor(Math.random() * (max - min) + min)];
 };
-//Funcion para que suene el audio cada vez que se vaya,entre o manden un mensaje.
+//Funcion para que suene el audio cada vez que se vaya,entre o manden un mensaje.esto se deberia cambiar de manera que pudieras mutearlo si se quisiera
 function notify() {
   if (playnoises == Boolean(true)) {
     document.getElementById('audio').play()
@@ -44,7 +44,7 @@ window.onblur = function () {
       connection.send(data);
     }
 }
-
+//esta zona te comprueba si has salido de la pestaña,en ese caso te saca de la sesion, de debe añadir mensaje en la parte lateral para poder cer el mensaje
 window.onfocus = function () {
     // =======Zona de re-union del ususario
     const currentDate = new Date
@@ -72,7 +72,7 @@ window.onfocus = function () {
 connection.onclose = (event) => {
   console.log("Ximbi'space esta cerrado ahora.");
   const error = document.querySelector("#error");
-  error.innerHTML = "<h2 style='color: red'>El servidor ha caido... volveremos pronto!</h2>"
+  error.innerHTML = "<h2 style='color: red'>El servidor esta bajo mantenimiento... volveremos pronto!</h2>"
 };
 
 connection.onerror = (event) => {
